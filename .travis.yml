@@ -9,13 +9,11 @@ before_script:
 script: py.test
 deploy:
   provider: script
-  script:
-    - rm combinedmap.geojson
-    - mv newmap.geojson combinedmap.geojson
-    - git add -A
-    - git commit -m "add new file"
-  on:
-    branch: master
+  script: touch wohoo.md
+    #- rm combinedmap.geojson
+    #- mv newmap.geojson combinedmap.geojson
+  #on:
+#    branch: master
 branches:
   only:
     - master
