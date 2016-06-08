@@ -5,10 +5,10 @@ touch wohoo.md
 #mkdir out;
 #node build.js
 #(
- cd out
+# cd out
  git init
  git config user.name "Travis-CI"
- git config user.email "travis@nodemeatspace.com"
+ git config user.email "hector@hectorsector.com"
  #cp ../CNAME ./CNAME
  #cp ../countryiso.js ./countryiso.js
  git add .
