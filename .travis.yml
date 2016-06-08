@@ -1,1 +1,3 @@
+install:
+  geojsonhint
 script: ./test-script
