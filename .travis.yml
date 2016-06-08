@@ -7,6 +7,10 @@ install:
 before_script:
   - geojson-merge mymap.geojson combinedmap.geojson > newmap.geojson
 script: py.test
-after_success:
-  - rm combinedmap.geojson
-  - mv newmap.geojson combinedmap.geojson
+deploy:
+  provider: script
+  script:
+    - rm combinedmap.geojson
+    - mv newmap.geojson combinedmap.geojson
+  on:
+    branch: master
