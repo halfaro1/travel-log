@@ -6,9 +6,6 @@ git status
 git remote -v
 ls -lah
 
-#rm -rf public
-mkdir public
-
 # config
 git config --global user.email "nobody@nobody.org"
 git config --global user.name "Travis CI"
@@ -18,8 +15,6 @@ git config --global user.name "Travis CI"
 touch wohoo.md
 
 # deploy
-cd public
-git init
-git add .
+git add wohoo.md
 git commit -m "Deploy to Github Pages"
-git push --force --quiet "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git" master:gh-pages > /dev/null 2>&1
+git push --force --quiet "https://${GITHUB_TOKEN}@$github.com/${GITHUB_REPO}.git" master HEAD > /dev/null 2>&1
