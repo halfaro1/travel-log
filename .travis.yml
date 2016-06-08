@@ -9,13 +9,14 @@ before_script:
 script: py.test
 deploy:
   provider: script
-  script:
-    - touch wohoo.md
-    - git add wohoo.md
+  script: deploy-script.sh
+    #- touch wohoo.md
+    #- git add wohoo.md
     #- rm combinedmap.geojson
     #- mv newmap.geojson combinedmap.geojson
-  on:
-    branch: gh-pages
-branches:
-  only:
-    - master
+  #on:
+#    branch: gh-pages
+#branches:
+  #only:
+  #  - master
+  #  - gh-pages
