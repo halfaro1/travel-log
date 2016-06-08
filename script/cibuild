@@ -1,3 +1,4 @@
+```
 require "json-schema"
 
 schema = {
@@ -44,3 +45,4 @@ end
 
 # => ["The property '#/a' of type String did not match the following type: integer in schema 18a1ffbb-4681-5b00-bd15-2c76aee4b28f"]
 JSON::Validator.fully_validate(schema, { "a" => "taco" })
+```
