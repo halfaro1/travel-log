@@ -6,7 +6,7 @@ import glob
 
 def test_geojson():
     try:
-        s = path("class-pins.topojson").bytes()
+        s = path("mymap.geojson").bytes()
         rawJson = geojson.loads(s)
         assert True
     except:
@@ -14,7 +14,7 @@ def test_geojson():
 
 def test_combined():
     try:
-        s = path("combinedgeojson.geojson").bytes()
+        s = path("combinedmap.geojson").bytes()
         rawJson = geojson.loads(s)
         assert True
     except:
