@@ -1,6 +1,4 @@
 import geojson
-from jsonmerge import merge
-from pprint import pprint
 from path import path
 
 import json
