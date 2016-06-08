@@ -16,9 +16,9 @@ deploy:
     #- mv newmap.geojson combinedmap.geojson
   #on:
 #    branch: gh-pages
-branches:
-  only:
-    - master
+#branches:
+#  only:
+#    - master
   #  - gh-pages
 env:
   global:
