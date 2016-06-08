@@ -3,4 +3,7 @@ install:
   - pip install pytest
   - pip install geojson
   - pip install forked-path
+  - npm install -g geojson-merge
+before_script:
+  - geojson-merge point.geojson linestring.geojson > combinedgeojson.geojson
 script: py.test
