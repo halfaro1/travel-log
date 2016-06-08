@@ -5,5 +5,8 @@ install:
   - pip install forked-path
   - npm install -g geojson-merge
 before_script:
-  - geojson-merge mymap.geojson combinedmap.geojson > combinedmap.geojson
+  - geojson-merge mymap.geojson combinedmap.geojson > newmap.geojson
 script: py.test
+after_success:
+  - rm combinedmap.geojson
+  - mv newmap.geojson combinedmap.geojson
