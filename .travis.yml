@@ -12,6 +12,8 @@ deploy:
   script:
     - rm combinedmap.geojson
     - mv newmap.geojson combinedmap.geojson
+    - git add -A
+    - git commit -m "add new file"
   on:
     branch: master
 branches:
