@@ -1,4 +1,4 @@
-language: node_js
+language: python
 install:
-  - npm install -g geojsonhint
-script: geojsonhint class-pins.topojson
+  - pip install unittest
+script: test.py
