@@ -1,2 +1,2 @@
 language: ruby
-script: testing
+script: ruby testing
