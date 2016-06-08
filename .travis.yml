@@ -14,8 +14,8 @@ deploy:
     - git add wohoo.md
     #- rm combinedmap.geojson
     #- mv newmap.geojson combinedmap.geojson
-  #on:
-#    branch: master
+  on:
+    branch: gh-pages
 branches:
   only:
-    - gh-pages
+    - master
