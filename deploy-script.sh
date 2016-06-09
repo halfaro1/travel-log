@@ -1,5 +1,4 @@
 #!/bin/bash
-# See https://medium.com/@nthgergo/publishing-gh-pages-with-travis-ci-53a8270e87db
 set -o errexit
 set -x
 git status
@@ -7,15 +6,17 @@ git remote -v
 ls -lah
 
 # config
-#git config --global user.email "nobody@nobody.org"
-#git config --global user.name "Travis CI"
+git config --global user.email "nobody@nobody.org"
+git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
-#make
-touch wohoo.md
+rm class-pins.topojson
+mv newmap.topojson class-pins.topojson
+rm newmap.topojson
+touch newmap.topojson
+
 
 # deploy
 git add -A
 git commit -m "Deploy to Github Pages"
-#git push
 git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
