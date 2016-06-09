@@ -12,7 +12,6 @@ git config --global user.name "Travis CI"
 # build (CHANGE THIS)
 rm class-pins.topojson
 mv newmap.topojson class-pins.topojson
-rm newmap.topojson
 touch newmap.topojson
 
 
