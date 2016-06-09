@@ -17,5 +17,5 @@ touch newmap.topojson
 # deploy
 git add -A
 git commit -m "Deploy to Github Pages"
-git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
+#git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
 git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:gh-pages
