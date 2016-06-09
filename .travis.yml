@@ -12,7 +12,7 @@ deploy:
   provider: script
   script: bash deploy-script.sh
 after_deploy:
-  script: bash clean-up.sh
+  - bash clean-up.sh
 branches:
   only:
     - master
