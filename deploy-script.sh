@@ -7,14 +7,14 @@ git remote -v
 ls -lah
 
 # config
-git config --global user.email "nobody@nobody.org"
-git config --global user.name "Travis CI"
+#git config --global user.email "nobody@nobody.org"
+#git config --global user.name "Travis CI"
 
 # build (CHANGE THIS)
 #make
 touch wohoo.md
 
 # deploy
-git add wohoo.md
+git add -A
 #git commit -m "Deploy to Github Pages"
 #git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
