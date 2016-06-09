@@ -11,3 +11,6 @@ deploy:
   skip_cleanup: true
   provider: script
   script: bash deploy-script.sh
+branches:
+  only:
+    - master
