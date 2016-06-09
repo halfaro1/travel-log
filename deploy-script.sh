@@ -17,8 +17,3 @@ mv newmap.topojson class-pins.topojson
 git add class-pins.topojson
 git commit -m "Deploy to Github Pages"
 git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:gh-pages
-
-rm mymap.topojson
-git add -A
-git commit -m "reset"
-git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
