@@ -17,5 +17,5 @@ touch wohoo.md
 # deploy
 git add -A
 git commit -m "Deploy to Github Pages"
-git push
-#git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
+#git push
+git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
