@@ -16,4 +16,4 @@ mv newmap.topojson class-pins.topojson
 # deploy
 git add class-pins.topojson
 git commit -m "Deploy to Github Pages [ci skip]"
-git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:gh-pages
+git push --force --quiet "https://git@github.com/${GITHUB_REPO}.git" HEAD:gh-pages
