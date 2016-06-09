@@ -9,13 +9,14 @@ ls -lah
 git config --global user.email "nobody@nobody.org"
 git config --global user.name "Travis CI"
 
-# build (CHANGE THIS)
+# build
 rm class-pins.topojson
 mv newmap.topojson class-pins.topojson
 touch newmap.topojson
 
-
 # deploy
-git add -A
+
+git checkout gh-pages
+git add class-pins.topojson
 git commit -m "Deploy to Github Pages"
 git push --force --quiet "https://${GITHUB_TOKEN}@github.com/${GITHUB_REPO}.git" HEAD:master
