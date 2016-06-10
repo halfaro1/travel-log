@@ -5,7 +5,6 @@ git status
 git remote -v
 ls -lah
 
-openssl aes-256-cbc -K $encrypted_3af51e426c8b_key -iv $encrypted_3af51e426c8b_iv -in traviskey.enc -out traviskey -d
 eval "$(ssh-agent -s)" #start the ssh agent
 chmod 600 traviskey # this key should have push access
 ssh-add traviskey
